@@ -1,0 +1,13 @@
+# Frontend ignore
+ipl-dashboard-frontend/node_modules/
+ipl-dashboard-frontend/.next/
+ipl-dashboard-frontend/.env
+ipl-dashboard-frontend/*.log
+
+# Backend ignore
+ipl-dashboard-backend/*.csv
+ipl-dashboard-backend/*.xlsx
+ipl-dashboard-backend/.env
+ipl-dashboard-backend/*.log
+
+*.zip

@@ -1,0 +1,134 @@
+/* Base Light Theme */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #1f2937;
+}
+
+.App {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Stat Card */
+.stat-card {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+}
+
+/* Stat Card Grid */
+.flex-wrap-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* Visual Section */
+.visual-section {
+  background: #f1f5f9;
+  padding: 1.5rem;
+  border-radius: 16px;
+  margin-top: 30px;
+}
+
+/* Logo Grid */
+.logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.logo-card {
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.logo-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.logo-card:hover {
+  transform: scale(1.05);
+  background: #e0e7ff;
+}
+
+.logo-card.active {
+  background: #c7d2fe;
+  box-shadow: 0 0 0 3px #6366f1;
+}
+
+/* ============================= */
+/* 🌙 Dark Mode Styles Below     */
+/* ============================= */
+
+.dark-mode {
+  background-color: #0f172a;
+  color: #070707;
+}
+
+/* Font overrides in dark mode */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode strong {
+  color: #af4949;
+  font-weight: 1000;
+}
+
+/* Stat cards in dark mode */
+.dark-mode .stat-card {
+  background: #1e293b;
+  color: #af4949;
+}
+
+/* Visual section */
+.dark-mode .visual-section {
+  background: #1e293b;
+}
+
+/* Input fields */
+.dark-mode input[type="text"] {
+  background-color: #1e293b;
+  color: #af4949;
+  border: 1px solid #475569;
+}
+
+/* Logo card font */
+.dark-mode .logo-card p {
+  color: #af4949;
+  
+}
+
+footer {
+  padding: 20px 0;
+  color: #6b7280;
+}
+
+.dark-mode footer {
+  color: #9ca3af;
+}
